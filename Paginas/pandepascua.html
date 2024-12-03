@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="productos_o.css">
+    <link rel="icon" type="image/jpg" href="/Imag/favicon.ico"/>
+    <title>TejiSabores</title>
+	</head>
+	<body>
+		<header>
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="nav-logo">
+						<a id="logo" href="Index.html"><img src="./Imag/favicon.ico"></a>
+                    </div>
+                    <div class="nav-menu" id="navMenu">
+                        <ul>
+                            <li><a href="Index.html" class="link">Inicio</a></li>
+                            <li><a href="Dulces.html" class="link">Dulces</a></li>
+                            <li><a href="Telares.html" class="link">Tejidos</a></li>
+                            <li><a href="Nosotros.html" class="link">Nosotros</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-2"></div>
+        </header>
+		<div class="content-wrapper">
+			<div class="heading">
+				<div class="atras">
+					<a href="javascript: history.go(-1)">←</a>
+				</div>
+				<h1>Pan de Pascua</h1>
+			</div>
+			<main>
+				<div class="gallery">
+					<div class="gallery-wrapper">
+						<img src="./imag/5.jpg" class="gallery-image" alt="Image 1">
+						<img src="./imag/4.jpg" class="gallery-image" alt="Image 2">
+						<img src="./imag/6.jpg" class="gallery-image" alt="Image 3">
+						<img src="./imag/3panes.jpeg" class="gallery-image" alt="Image 4">
+					</div>
+					<button class="gallery-nav left" onclick="previousImage()">⬅︎</button>
+					<button class="gallery-nav right" onclick="nextImage()">➡︎</button>
+				</div>
+				<div class="container-info-product">
+					<div class="container-price">
+                        <span>Selecciona un tamaño</span>
+                    </div>
+                    <div class="container-details-product">
+                        <div class="form-group">
+                            <label for="tamaño">Tamaño</label>
+                            <select name="tamaño" id="tamaño">
+                                <option disabled selected value="">Escoge el tamaño</option>
+                                <option value="Pequeño">Pequeño (S)</option>
+                                <option value="Mediano">Mediano (M)</option>
+                                <option value="Grande">Grande (XL)</option>
+                            </select>
+                        </div>
+                    </div>
+
+					<div class="container-description">
+						<div class="title-description">
+							<h4>Descripción</h4>
+							<i class="fa-solid fa-chevron-down"></i>
+						</div>
+						<div class="text-description">
+							<p>✨Deléitate con nuestro Pan de Pascua casero, lleno de sabor tradicional, frutas confitadas y especias que evocan la magia de la Navidad. ¡Perfecto para compartir en estas fiestas!</p>
+							<p>Pequeño (S) - 50 gr</p>
+							<p>Mediano (M) - 750 gr</p>
+							<p>Grande (XL) - 1 Kg</p>
+						</div>
+					</div>
+					<!--
+					<div class="container-additional-information">
+						<div class="title-additional-information">
+							<h4>Información adicional</h4>
+							<i class="fa-solid fa-chevron-down"></i>
+						</div>
+						<div class="text-additional-information hidden">
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing
+								elit. Laboriosam iure provident atque voluptatibus
+								reiciendis quae rerum, maxime placeat enim cupiditate
+								voluptatum, temporibus quis iusto. Enim eum qui delectus
+								deleniti similique? Lorem, ipsum dolor sit amet
+								consectetur adipisicing elit. Sint autem magni earum est
+								dolorem saepe perferendis repellat ipsam laudantium cum
+								assumenda quidem quam, vero similique? Iusto officiis
+								quod blanditiis iste?
+							</p>
+						</div>
+					</div>
+					-->
+				</div>
+			</main>
+		</div>
+
+		<section class="container-related-products">
+			<div class="title">
+				<h2>Productos Relacionados</h2>
+			</div>
+			<div class="card-list-products">
+				<a href="trozopiedelimon.html" class="card-link">
+					<div class="card">
+						<div class="card-img">
+							<img src="./imag/3.jpg" alt="producto-1"/>
+						</div>
+						<div class="info-card">
+							<div class="text-product">
+								<h3>Trozo Pie de Limón</h3>
+								<p class="category">Dulces</p>
+							</div>
+							<div class="price">$3.700</div>
+						</div>
+					</div>
+				</a>
+				<a href="calidezandina.html" class="card-link">
+					<div class="card">
+						<div class="card-img">
+							<img src="./imag/y.jpg" alt="producto-2"/>
+						</div>
+						<div class="info-card">
+							<div class="text-product">
+								<h3>Calidez Andina</h3>
+								<p class="category">Tejidos</p>
+							</div>
+							<div class="price">$12.000</div>
+						</div>
+					</div>
+				</a>
+				<a href="piedelimon.html" class="card-link">
+					<div class="card">
+						<div class="card-img">
+							<img src="./imag/1.jpg" alt="producto-3"/>
+						</div>
+						<div class="info-card">
+							<div class="text-product">
+								<h3>Pie de Limón</h3>
+								<p class="category">Dulces</p>
+							</div>
+							<div class="price">$7.000</div>
+						</div>
+					</div>
+				</a>
+				<a href="raicestejidas.html" class="card-link">		
+					<div class="card">
+						<div class="card-img">
+							<img src="./imag/t.jpg" alt="producto-4"/>
+						</div>
+						<div class="info-card">
+							<div class="text-product">
+								<h3>Raíces Tejidas (M)</h3>
+								<p class="category">Tejidos</p>
+							</div>
+							<div class="price">$16.000</div>
+						</div>
+					</div>
+				</a>	
+			</div>
+		</section>
+		<br>
+		<br>
+		<footer class="footer">
+			<div class="containerr container-footer">
+				<div class="menu-footer">
+					<div class="footer-logo">
+						<img src="./imag/favicon.ico">
+					</div>
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>Dirección: Américo Vespucio 945</li>
+							<li>Teléfono: +56 9 8673 3365</li>
+							<li>EmaiL: Tejisabores@soporte.com</li>
+						</ul>
+					</div>
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="Nosotros.html" class="footer_a">Acerca de Nosotros</a></li>
+							<li><a href="#" class="footer_a">Politicas de Privacidad</a></li>
+							<li><a href="#" class="footer_a">Términos y condiciones</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+		<script src="productos.js"></script>
+	</body>
+</html>

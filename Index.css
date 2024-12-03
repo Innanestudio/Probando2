@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	max-width: 130rem;
+	margin: 0 auto;
+}
+
+/*  Header - Nav  */
+.navbar {
+	display: flex;
+	align-items: center;
+    top: 0;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    z-index: 1000;
+    font-size: 15rem;
+ }
+
+.nav-logo img{
+    margin-top: 35px;
+    height: 90px;
+    width: auto;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #ebfbca;
+}
+
+.container-navbar {
+	background-color: #93BD59;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+
+.search-form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 2rem;
+	background-color: #fff;
+	height: 4.4rem;
+	overflow: hidden;
+}
+
+.search-form input {
+	outline: none;
+	font-family: inherit;
+	border: none;
+	width: 25rem;
+	font-size: 1.4rem;
+	padding: 0 2rem;
+	color: #777;
+	cursor: pointer;
+}
+
+.search-form input::-webkit-search-cancel-button {
+	appearance: none;
+}
+
+.search-form .btn-search {
+	border: none;
+	background-color: #A4D65D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 1rem;
+}
+
+.btn-search i {
+	font-size: 2rem;
+	color: #fff;
+}
+
+.header-2 {
+    background: #f5e9cb;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.3rem 5%; 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    top: 100px; 
+    width: 100%; 
+    z-index: 1000;
+    line-height: 100px;
+ 
+}
+.header-2 .fa-bars {
+	display: none;
+}
+
+/* Banner */
+.banner {
+	background-image: linear-gradient(5deg, #000000, #00000020), url('imag/paidelimon.mp4');
+	height: 60rem;
+	background-size: cover;
+	background-position: center;
+}
+.video-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content-banner {
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 25rem 0;
+}
+
+.content-banner p {
+	color: #93BD59;
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.content-banner h2 {
+	color: #fff;
+	font-size: 4.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.content-banner a {
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: #93BD59;
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
+    font-size: 1.2rem;
+}
+
+/* Contenido Principal */
+.main-content {
+	background-color: #F9F5E8;
+}
+
+/* Products */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-products {
+    display: flex;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 3rem;
+}
+
+.card-product {
+	background-color: #fff;
+	padding: 2rem 3rem;
+	border-radius: 2.5rem;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container-img {
+	position: relative;
+}
+
+.container-img img {
+	width: 100%;
+}
+
+.container-img .discount {
+	position: absolute;
+	left: 0;
+	background-color: #93BD59;
+	color: #fff;
+	padding: 2px 1.2rem;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+	background-color: #000;
+}
+
+.content-card-product {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, min-content);
+	row-gap: 1rem;
+}
+
+.stars {
+	grid-row: 1/2;
+	grid-column: 1/-1;
+}
+
+.stars i {
+	font-size: 1.3rem;
+	color: #A4D65D;
+}
+
+.content-card-product h3 {
+	grid-row: 2/3;
+	grid-column: 1/-1;
+
+	font-weight: 400;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.content-card-product h3:hover {
+	color: #93BD59;
+}
+
+
+.content-card-product .price {
+	justify-self: end;
+	align-self: center;
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: #A4D65D;
+}
+
+.content-card-product .price span {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-decoration: line-through;
+	color: #777;
+	margin-left: 0rem;
+}
+
+/* Galeria de Fotos */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 30rem);
+	gap: 1.5rem;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery-img-3 {
+	grid-column: 2/4;
+	grid-row: 1/3;
+}
+
+/* Pie de Página */
+.containerr {
+	margin-top: 100px;
+	max-width: 155rem;
+}
+
+.footer {
+	background-color: #93BD59;
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 2rem;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) 50rem;
+	gap: 3rem;
+	justify-items: center;
+	margin-top: 27px;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 300;
+	font-weight: normal;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	font-weight: normal;
+}
+
+.footer_a {
+	font-size: 2rem;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: #151515;
+}
+
+.footer-logo img {
+    height: 160px;
+    width: auto;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    z-index: 10000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}

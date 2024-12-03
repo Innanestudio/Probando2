@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Dulces.css">
+    <link rel="icon" type="image/jpg" href="/Imag/favicon.ico"/>
+    <title>TejiSabores</title>
+</head>
+<body>
+    <header>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <div class="nav-logo">
+                    <a id="logo" href="Index.html"><img src="./Imag/favicon.ico"></a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="Index.html" class="link">Inicio</a></li>
+                        <li><a href="Dulces.html" class="link active">Dulces</a></li>
+                        <li><a href="Telares.html" class="link">Tejidos</a></li>
+                        <li><a href="Nosotros.html" class="link">Nosotros</a></li>
+                    </ul>
+                </div>
+                <form class="search-form">
+                    <input type="search" id="searchInput" placeholder="Buscar..." />
+                    <button type="button" class="btn-search" onclick="searchProducts()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+        <div class="header-2"></div>
+    </header>
+
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Nuestros Postres</h2>
+        </div>
+        <!--
+        <div class="container-options">
+            <span id="allOption" class="active">Todos</span>
+            <span id="featuredOption">Destacados</span>
+            <span id="recentOption">Más recientes</span>
+            <span id="bestSellingOption">Mejores Vendidos</span>
+        </div>      
+        -->  
+        <div class="products-container">
+            <div class="box" data-category="best-selling">
+                <a href="piedelimon.html" class="card-link"> 
+                    <img src="./Imag/1.jpg">
+                    <h3>Pie De Limón</h3>
+                    <div class="content">
+                        <p class="price">$7.890 CLP <span>$11.000</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="box" data-category="featured">
+                <a href="galletas.html" class="card-link"> 
+                    <img src="./Imag/2.jpg">
+                    <h3>Galletas (6 UN)</h3>
+                    <div class="content">
+                        <p class="price">$3.700 CLP <span>$5.390</span></p>
+                    </div>
+                </a>    
+            </div>
+            <div class="box" data-category="best-selling">
+                <a href="trozopiedelimon.html" class="card-link"> 
+                    <img src="./Imag/3.jpg">
+                    <h3>Trozo Pie de Limón</h3>
+                    <div class="content">
+                        <p class="price">$12.000 CLP</p>
+                    </div>
+                </a>                    
+            </div>
+            <div class="box" data-category="best-selling">
+                <a href="pandepascua.html" class="card-link"> 
+                    <img src="./Imag/5.jpg">
+                    <h3>Pan de Pascua</h3>
+                    <div class="content">
+                        <p class="price">$5.000 CLP</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+    </section>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="containerr container-footer">
+            <div class="menu-footer">
+                <div class="footer-logo">
+                    <img src="./imag/favicon.ico">
+                </div>
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Américo Vespucio 945</li>
+                        <li>Teléfono: +56 9 8673 3365</li>
+						<li>EmaiL: Tejisabores@soporte.com</li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="Nosotros.html" class="footer_a">Acerca de Nosotros</a></li>
+                        <li><a href="#" class="footer_a">Politicas de Privacidad</a></li>
+                        <li><a href="#" class="footer_a">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/56971007295" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a> 
+    <script src="java.js"></script>
+</body>
+</html>

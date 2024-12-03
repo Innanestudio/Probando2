@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: rgb(251, 255, 241);
+}
+
+.container {
+    margin-top: 100px;
+    max-width: 155rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: #93BD59;
+    z-index: 100;
+    align-items: center;
+}
+
+.nav-logo img{
+    margin-left: 56px;
+    margin-top: 43px;
+    height: 90px;
+    width: auto;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+    font-size: 1.5rem;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #ebfbca;
+}
+
+.container-nav {
+	background-color: #93BD59;
+}
+
+.nav .fa-bars {
+	display: none;
+}
+.header-2 {
+    background: #f5e9cb;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0.8rem 5%; 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    top: 100px; 
+    width: 100%; 
+    z-index: 999;
+}
+
+/* Título de Página */
+.heading{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.heading h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #93BD59;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Texto de la página Parte 1*/
+.section {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.parrafo1 {
+    margin-top: 20px;
+}
+
+.parrafo1-text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+.parrafo1-text b {
+    font-family: "Edu AU VIC WA NT Pre";
+    font-size: 20px;
+
+}
+
+/* Carrusel */
+.section_i {
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    width: 1450px;
+    height: 430px;
+    margin: auto;
+}
+
+.section_i img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.section_i img:hover {
+    cursor: all-scroll;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    z-index: 10000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* Pie de Página */
+
+.footer {
+	background-color: #93BD59;
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 2rem;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) 30rem; /* Agregar a 3 si esque se agrega una columna más */
+	gap: 3rem;
+	justify-items: center;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: #151515;
+}
+
+.footer-logo img {
+    height: 160px;
+    width: auto;
+}
+
+
+/* Responsive  */
+@media (max-width: 1200px) {
+    .nav .fa-bars {
+        padding: 0 20px;
+    }
+    .nav-logo img {
+        margin-left: 20px;
+    }
+    .section, .section2 {
+        width: 90%;
+    }
+    .section_i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-menu ul {
+        display: none;
+    }
+    #navMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section_i img {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+    .container-footer {
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .menu-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav {
+        height: auto;
+        padding: 10px 20px;
+    }
+    .heading h3 {
+        font-size: 2rem;
+    }
+    .section_i {
+        flex-direction: column;
+        height: auto;
+    }
+    .section_i img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .container-footer {
+        padding: 1rem;
+    }
+    .footer-logo img {
+        height: 80px;
+    }
+}
